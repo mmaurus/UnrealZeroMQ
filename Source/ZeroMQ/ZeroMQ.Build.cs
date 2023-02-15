@@ -57,6 +57,7 @@ public class ZeroMQ : ModuleRules
     public ZeroMQ(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+        bEnableExceptions = true;
         PublicDependencyModuleNames.AddRange(new string[] { "Core" });
         AddZeroMQ(Target);
 
